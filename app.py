@@ -4,7 +4,7 @@ from huggingface_hub import hf_hub_download  # <--- 1. استيراد المكت
 import os
 
 # --- معلومات الموديل من Hugging Face ---
-REPO_ID = "https://huggingface.co/ahmedhosni10/teeth-disease-model/resolve/main/teeth_best_model_vgg16.h5"  # <--- 2. اسم المستودع بتاعك
+REPO_ID = "ahmedhosni10/teeth-disease-model"  # <--- 2. اسم المستودع بتاعك
 FILENAME = "teeth_best_model_vgg16.h5"     # <--- 3. اسم ملف الموديل
 
 @st.cache_resource
@@ -39,3 +39,4 @@ if model:
         # ... بقية الكود بتاعك لمعالجة الصورة والتنبؤ
 else:
     st.error("لم يتم تحميل الموديل، لا يمكن المتابعة. يرجى مراجعة الأخطاء.")
+
